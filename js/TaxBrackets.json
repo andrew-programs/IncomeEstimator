@@ -1,10 +1,36 @@
 {
+  "2022" : {
+    "single" : {
+
+    },
+    "marriedFilingSeparately" : {
+
+    },
+    "headOfHousehold" : {
+
+    },
+    "marriedFilingJointly" : {
+
+    }
+  },
+
   "2023" : {
     "single" : {
-      
+      "lnoe10275" : 0.10,
+      "gn10275lnoe41775" : 0.12,
+      "gn41775lnoe89075" : 0.22,
+      "gn89075lnoe170050" : 0.24,
+      "gn170050lnoe215950" : 0.32,
+      "gn215950lnoe539900" : 0.35,
+      "gn539000" : 0.37
     },
+    "marriedFilingSeparately" : {
 
-    "married" : {
+    },
+    "headOfHousehold" : {
+
+    },
+    "marriedFilingJointly" : {
 
     }
   }
