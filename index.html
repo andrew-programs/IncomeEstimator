@@ -2,20 +2,38 @@
 <html>
   <head>
     <link rel="stylesheet" href="stylesheet.css">
-    <script type="text/javascript" src="/Users/andrew/Desktop/Projects/JavaScript/IncomeEstimator/js/calculateIncome.js"></script>
+    <script type="text/javascript" src="./js/calculateIncome.js"></script>
+    <script type="text/javascript" src="./js/TaxEstimator.js"></script>
   </head>
-  <div class="outside-wrapper">
-    <h3 class="header">Income Calculator</h3>
-    <div class="input-wrapper">
-      <form action="#">
+  <div class="container" id="income-div">
+    <div class="outside-wrapper">
+      <h3 class="header">Income Estimator</h3>
+      <hr>
+      <div class="input-wrapper">
         <input type="text" class="calculation-input" id="rate" placeholder="Hourly Rate">
         <input type="text" class="calculation-input" id="hours" placeholder="Weekly Hours">
-      </form>
+      </div>
+      <div class="output-wrapper">
+        <div class="calculation-wrapper">
+          <p class="calculated-label">Weekly : $</p>
+          <p class="calculated-label" id="weekly"></p>
+        </div>
+        <div class="calculation-wrapper">
+          <p class="calculated-label">Monthly : $</p>
+          <p class="calculated-label" id="monthly"></p>
+        </div>
+        <div class="calculation-wrapper">
+          <p class="calculated-label">Annual : $</p>
+          <p class="calculated-label" id="annual"></p>
+        </div>
+      </div>
     </div>
-    <div class="output-wrapper">
-      <p class="calculated-label" id="weekly"></p>
-      <p class="calculated-label" id="monthly"></p>
-      <p class="calculated-label" id="annual"></p>
+    <div class="outside-wrapper" id="tax-div">
+      <h3 class="header">Taxes Estimator</h3>
+      <hr>
+      <div>
+        <p class="calculated-label">test</p>
+      </div>
     </div>
   </div>
 </html>

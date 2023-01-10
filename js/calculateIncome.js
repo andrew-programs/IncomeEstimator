@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('DOMContentLoaded', () => {
   var eRate = document.getElementById('rate');
   var eHours = document.getElementById('hours');
   var weekly = document.getElementById('weekly');
@@ -8,26 +8,18 @@ document.addEventListener('DOMContentLoaded',() => {
   eRate.addEventListener('input', () => {
     let rate = parseFloat(eRate.value) || 0;
     let hours = parseFloat(eHours.value) || 0;
-
-    incomeWeekly = rate * hours;
-    incomeMonthly = rate * hours * 4;
-    incomeAnnual = rate * hours * 52;
-
-    weekly.innerHTML = "Weekly : $" + incomeWeekly; 
-    monthly.innerHTML = "Monthly : $" + incomeMonthly; 
-    annual.innerHTML = "Annual : $" + incomeAnnual;
+    
+    weekly.innerHTML = rate * hours;
+    monthly.innerHTML = rate * hours * 4;
+    annual.innerHTML = rate * hours * 52;
   });
 
   eHours.addEventListener('input', () => {
     let rate = parseFloat(eRate.value) || 0;
     let hours = parseFloat(eHours.value) || 0;
 
-    incomeWeekly = rate * hours;
-    incomeMonthly = rate * hours * 4;
-    incomeAnnual = rate * hours * 52;
-
-    weekly.innerHTML = "Weekly : $" + incomeWeekly; 
-    monthly.innerHTML = "Monthly : $" + incomeMonthly; 
-    annual.innerHTML = "Annual : $" + incomeAnnual;
+    weekly.innerHTML = rate * hours;
+    monthly.innerHTML = rate * hours * 4;
+    annual.innerHTML = rate * hours * 52;
   });
 });
